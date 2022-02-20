@@ -1,11 +1,19 @@
 'use strict';
 
-const score = 30;
+const signal = 'pink';
 
-if (score >= 80) {
-  console.log('Grate!');
-} else if (score >= 60) {
-  console.log('Good');
-} else {
-  console.log('OK...');
+switch (signal) {
+  case 'red':
+    console.log('stop!')
+    break;
+  case 'yellow':
+    console.log('Caution!')
+    break;
+  case 'blue':
+  case 'green':
+    console.log('Go!')
+    break;
+  default:
+    console.log('Wrong signal!')
+    break;
 }
