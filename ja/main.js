@@ -1,19 +1,17 @@
 'use strict';
 
-const signal = 'pink';
+// function sum(a, b, c) {
+//   // console.log(a + b + c);
+//   return a + b + c;
+// }
 
-switch (signal) {
-  case 'red':
-    console.log('stop!')
-    break;
-  case 'yellow':
-    console.log('Caution!')
-    break;
-  case 'blue':
-  case 'green':
-    console.log('Go!')
-    break;
-  default:
-    console.log('Wrong signal!')
-    break;
-}
+const sum = function(a, b, c) {
+  // console.log(a + b + c);
+  return a + b + c;
+};
+
+
+const total = sum(1, 2, 3) + sum(3, 4, 5);
+console.log(total);
+
+
