@@ -1,24 +1,14 @@
 'use strict';
 
 {
-  const point = {
-    x: 100,
-    y: 180,
-  };
+  function update() {
+    // document.getElementById('target').textContent = 'Changed!';
+    // document.querySelector('p').textContent = 'Changed!';
+    // document.querySelectorAll('p')[1].textContent = 'Changed!';
+    document.querySelectorAll('p').forEach((p, index) => {
+      p.textContent = `${index}番目のpです！`;
+    });
+  }
 
-  // const keys = Object.keys(point);
-  // keys.forEach(key => {
-  //   console.log(`Key: ${key} Value: ${point[key]}`);
-  // });
-
-  const points = [
-    {x: 30, y: 20},
-    {x: 10, y: 50},
-    {x: 40, y: 40},
-];
-
-console.log(points[1].y);
-
+  setTimeout(update, 1000);
 }
-
-
